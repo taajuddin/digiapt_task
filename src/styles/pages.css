@@ -1,0 +1,10 @@
+.root {
+    display: flex;
+    height:550px;
+    max-width: 50rem;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-color: #fff5f6;
+    padding: 2rem;
+}

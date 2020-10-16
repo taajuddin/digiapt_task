@@ -1,0 +1,18 @@
+
+.title {
+    margin: 2rem 0 0.5rem 0;
+    font-size: 25rem;
+    border: none;
+    border-bottom: 2px solid #664df7;
+    padding: 0.5rem;
+
+    /* width: 100%; */
+}
+.description {
+    margin-bottom: 1rem;
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #b5b5b5;
+}
