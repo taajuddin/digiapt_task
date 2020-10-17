@@ -120,6 +120,7 @@ const Question = () => {
                 <Select
                     defaultValue={options[0]}
                     options={options}
+                    isSearchable={false}
                     onChange={handleChange}
 
                 />
