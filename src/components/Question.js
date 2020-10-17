@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Select from "react-select";
 import "../styles/question.css";
+
 const options = [
     {
         value: "Short Answer",
@@ -17,11 +18,10 @@ const options = [
 ];
 
 const Question = () => {
-    const [optionType, setOptionType] = useState("Short Answer");
     const [allOptions, setAllOptions] = useState([{ type: "text", value: "" }]);
+
+    
     const handleChange = (elem) => {
-        console.log(elem.value);
-         setOptionType(elem.value);
         if (elem.value === "Short Answer")
             setAllOptions([{ type: "text", value: "" }]);
         else if (elem.value === "Multiple choice") {
@@ -76,9 +76,7 @@ const Question = () => {
 
         setAllOptions([...allOptions, { type: allOptions[0].type, value: "" }]);
     };
-    const addTextOption = () => {
-        setAllOptions([...allOptions, { type: "text", value: "" }]);
-    };
+    
     let addOther =
         allOptions[allOptions.length - 1].type !== "text" &&
         allOptions.length < 5 ? (
