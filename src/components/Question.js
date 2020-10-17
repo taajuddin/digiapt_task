@@ -18,9 +18,10 @@ const options = [
 ];
 
 const Question = () => {
+
     const [allOptions, setAllOptions] = useState([{ type: "text", value: "" }]);
 
-    
+
     const handleChange = (elem) => {
         if (elem.value === "Short Answer")
             setAllOptions([{ type: "text", value: "" }]);
@@ -86,7 +87,6 @@ const Question = () => {
                     
                     onClick={addSameOption}
                     className="option_item"
-                    tabIndex={-1}
                     role="button"
                 >
                     Add option or
