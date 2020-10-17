@@ -44,9 +44,10 @@ const Question = () => {
             case "radio":
                 return (
                     <div>
-                        <input type="radio" id="rad" value={elem} />
+                        <input type="radio" id="rad" name="Multiple choice" value={elem} />
                         <input
                             type="text"
+                            name="Multiple choice"
                             className="option_text"
                             placeholder="write something"
                         />
